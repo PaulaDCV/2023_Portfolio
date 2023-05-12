@@ -17,7 +17,7 @@ export default function NavBar() {
         console.log("heeey"+ to);
     }
     return (
-        <Disclosure as="nav" className="sticky z-50 top-0  bg-primary">
+        <Disclosure as="nav" className="sticky z-50 top-0  bg-navbar">
             {({open}) => (
                 <>
                     <div className=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ export default function NavBar() {
                                                 offset={-70}
                                                 duration={500}
                                                 className={classNames(
-                                                    'bg-primary text-accent hover:bg-primary-dark hover:text-white rounded-md px-3 py-2 text-sm font-medium'
+                                                    'bg-navbar text-accent hover:bg-primary-dark hover:text-white rounded-md px-3 py-2 text-sm font-medium'
                                                 )}
                                                 onSetActive={handleSetActive(item.name)}
                                                 aria-current={item.current ? 'page' : undefined}
@@ -88,7 +88,7 @@ export default function NavBar() {
                                     offset={-70}
                                     duration={500}
                                     className={classNames(
-                                        'bg-primary  hover:bg-primary-dark hover:text-white rounded-md px-3 py-2 text-sm font-medium'
+                                        'bg-navbar  hover:bg-primary-dark hover:text-white rounded-md px-3 py-2 text-sm font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                     onSetActive={handleSetActive(item.name)}

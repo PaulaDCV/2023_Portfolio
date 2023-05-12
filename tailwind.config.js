@@ -8,10 +8,11 @@ module.exports = withMT({
     colors: {
       'primary': '#312e81',
       'primary-dark': '#1e1b4b',
-      'accent': '#E6E6E6',
+      'accent': '#d2d2d2',
+      'accent-dark': "#D2D2D2",
       'secondary1': '#6A5ACD',
       'secondary': '#7c3aed',
-
+      'navbar': "#2c2486"
     },
   },
   plugins: [ require('@tailwindcss/aspect-ratio'),],
