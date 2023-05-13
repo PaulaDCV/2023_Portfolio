@@ -1,5 +1,5 @@
 import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from "@material-tailwind/react";
-//Todo: style cards so that they match palette.
+
 export default function CardContainer(props) {
 
     return (
@@ -8,9 +8,7 @@ export default function CardContainer(props) {
                 <CardBody>
                     <CardHeader className="text-accent relative h-3/4">
                         <img
-                            src="https://images.unsplash.com/photo-154055301672
-                            2-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90b
-                            y1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                            source= {"/images/ADHD.png"}
                             alt="img-blur-shadow" layout="fill"/>
                     </CardHeader>
                     <Typography variant="h5" className="text-accent py-6 mb-2">
