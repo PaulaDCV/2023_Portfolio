@@ -5,11 +5,7 @@ export default function ContactForm() {
     <div>
       <section className="text-gray-700 body-font relative">
         <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-col text-center w-full mb-6">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-accent">
-              Contact me
-            </h1>
-          </div>
+
           <div className="lg:w-1/2 md:w-2/3 mx-auto ">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">
@@ -29,7 +25,7 @@ export default function ContactForm() {
                 <div className="relative">
                   <label
                     for="email"
-                    className="text-accent-dark leading-7 text-sm text-gray-600"
+                    className="text-accent-dark leading-7 text-sm text-accent0"
                   >
                     Email
                   </label>
@@ -45,7 +41,7 @@ export default function ContactForm() {
                 <div className="relative">
                   <label
                     for="message"
-                    className="text-accent-dark leading-7 text-sm text-gray-600"
+                    className="text-accent-dark leading-7 text-sm text-accent"
                   >
                     Message
                   </label>
@@ -57,12 +53,12 @@ export default function ContactForm() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                  Button
+                <button className="flex mx-auto bg-button border-0 py-2 px-8 focus:outline-none hover:scale-105 hover:shadow-md hover:shadow-navbar rounded text-section">
+                  Send
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500">example@email.com</a>
+                <a  href = "/" className="text-indigo-500">example@email.com</a>
 
 
               </div>

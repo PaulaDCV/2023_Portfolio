@@ -12,7 +12,11 @@ module.exports = withMT({
       'accent-dark': "#D2D2D2",
       'secondary1': '#6A5ACD',
       'secondary': '#7c3aed',
-      'navbar': "#2c2486"
+      'navbar': "#2c2486",
+      "section": "#5a4dab",
+      "element": "#8a7fd2",
+      "button": "#D2D2D2",
+      "hover": "#BFBFBF",
     },
   },
   plugins: [ require('@tailwindcss/aspect-ratio'),],

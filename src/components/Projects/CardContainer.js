@@ -4,7 +4,7 @@ export default function CardContainer(props) {
 
     return (
         <div className={" p8"}  onClick={props.onClick}>
-            <Card className="bg-indigo-400/70 mt-6 w-96 py-6">
+            <Card className="bg-element mt-6 w-96 py-6">
                 <CardBody>
                     <CardHeader className="text-accent relative h-3/4">
                         <img

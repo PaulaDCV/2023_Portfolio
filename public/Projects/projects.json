@@ -1,0 +1,9 @@
+[
+  {
+    "id": "ADHD",
+    "title": "ADHD",
+    "description": "This is the description of Project 1.",
+    "images": ["image1.jpg", "image2.jpg"],
+    "tags": ["React", "JavaScript", "CSS"]
+  }
+]
