@@ -3,10 +3,10 @@ import ContactForm from "./ContactForm";
 
 export default function Contact() {
 
-    return (<div className=" flex flex-row items-center ">
-        <div className="flex flex-wrap  flex-1 ">
+    return (
+        <div className=" flex flex-row  justify-center  items-stretch  w-full">
             <div id="buttonContainer"
-                 className="flex flex-col flex-1 justify-center items-center  ">
+                 className="  flex  flex-col flex-1 justify-evenly items-end basis-1/3 min-h-full">
                 <a href={"https://github.com/PaulaDCV/2023_Portfolio"}>
                     <AiFillGithub className="text-accent text-6xl hover:scale-125 hover:shadow-md hover:shadow-navbar "/>
                 </a>
@@ -14,9 +14,7 @@ export default function Contact() {
                     <AiFillLinkedin className="text-accent text-6xl hover:scale-125 hover:shadow-md hover:shadow-navbar"/>
                 </a>
             </div>
-            <div className=" text-accent flex-1  basis-2/3 w-2/3">
-                <ContactForm/>
-            </div>
-        </div>
+
+        <ContactForm/>
     </div>)
 }
