@@ -35,10 +35,10 @@ const [projects, setProjects] = useState([]);
                   id: project.id,
                   title: project.title,
                   description: project.description,
-                  long_description: parsedContent,
+                  longDescription: parsedContent,
                   // Include other project properties from the JSON file
                   images: project.images,
-                  tags: project.tags,
+                  skills: project.skills,
                   // Include any other relevant properties
             };
 
@@ -82,26 +82,23 @@ const [projects, setProjects] = useState([]);
             <Option>Material Tailwind Svelte</Option>
           </Select>
         </div>*/}
-
-                <div className="flex flex-row flex-wrap justify-items-center justify-evenly ">
+                <div className="flex flex-row flex-wrap  justify-stretch items-center ">
                     {projects.map((data) => (<CardContainer
                             description={data.description}
                             title={data.title}
                             skills={data.skills}
-                            imageRef={data.image}
-                            onClick={() => handleCardClick(data)}
+                            imageRef={`/images/${data.id}.png`}
+                            onClick={() => handleCardClick(data)
+                            }
                         />))}
-
                 </div>
-
-
                 <div>
             <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
                 contentLabel="Card Modal"
-                className="max-w-lg mx-auto my-4 rounded-lg text-accent bg-indigo-800  "
-                overlayClassName=" fixed inset-0 flex justify-center items-center "
+                className="max-w-lg mx-auto my-4 rounded-lg text-accent bg-indigo-800 "
+                overlayClassName=" fixed inset-0 flex justify-center items-center  "
             >
                 {selectedCard && (<CardModal selectedCard={selectedCard}/>)}
             </Modal>

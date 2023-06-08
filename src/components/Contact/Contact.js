@@ -14,7 +14,6 @@ export default function Contact() {
                     <AiFillLinkedin className="text-accent text-6xl hover:scale-125 hover:shadow-md hover:shadow-navbar"/>
                 </a>
             </div>
-
         <ContactForm/>
     </div>)
 }

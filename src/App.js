@@ -28,9 +28,8 @@ function App() {
                     <Element id={section.id} className = {""}>
                         <SectionLayout title={section.title} content={section.content} bg={ section.bg}> </SectionLayout>
                     </Element>
-
                 <hr
-                    className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-accent
+                    className="my-6 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-accent
                     to-transparent opacity-50 dark:opacity-100" />
                 </div>))}
         </div>

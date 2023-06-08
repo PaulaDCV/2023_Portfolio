@@ -51,7 +51,6 @@ export default function NavBar() {
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
                                             <Link
-
                                                 activeClass={'bg-primary-dark text-accent' }
                                                 to={item.to}
                                                 spy={true}
@@ -64,7 +63,6 @@ export default function NavBar() {
                                                 onSetActive={handleSetActive(item.name)}
                                                 aria-current={item.current ? 'page' : undefined}
                                             >
-
                                                 {item.name}
                                             </Link>
                                         ))}
@@ -92,9 +90,7 @@ export default function NavBar() {
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
                                     onSetActive={handleSetActive(item.name)}
-
                                 >
-
                                     {item.name}
                                 </Link>
                             ))}

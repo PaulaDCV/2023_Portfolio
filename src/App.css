@@ -47,3 +47,7 @@
   border: 7px solid transparent !important;
   border-right: 7px solid var(--secondary) !important;
 }
+
+.markdown > * {
+  all: revert;
+}
