@@ -5,12 +5,11 @@ import About from './components/About';
 import {Element} from 'react-scroll'
 import Contact from './components/Contact/Contact';
 import Projects from './components/Projects/Projects';
+import Intro from "./components/Intro";
+import Wave from 'react-wavify'
 
 function App() {
     const sections = [
-          {
-        id: '', title: '', content:    <div className="h-screen">hi</div>,
-    },
         {
         id: 'about', title: 'About', content: <About/>, bg: "bg-indigo-900",
     }, {
@@ -21,11 +20,13 @@ function App() {
     ];
     return (<div className="">
         <NavBar/>
+         <Intro/>
 
-        <div className="App flex flex-col justify-between bg-section  ">
+        <div className=" App flex flex-col justify-between   ">
 
-            {sections.map((section) => (<div>
-                    <Element id={section.id} className = {""}>
+
+            {sections.map((section) => (<div className="bg-section">
+                    <Element id={section.id}>
                         <SectionLayout title={section.title} content={section.content} bg={ section.bg}> </SectionLayout>
                     </Element>
                 <hr

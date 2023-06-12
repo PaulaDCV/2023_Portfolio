@@ -25,6 +25,7 @@
     "react-smooth": "^2.0.2",
     "react-spring": "^9.7.1",
     "react-vertical-timeline-component": "^3.6.0",
+    "react-wavify": "^1.8.2",
     "remarkable": "^2.0.1",
     "tailwindcss": "^3.3.2",
     "web-vitals": "^2.1.4"

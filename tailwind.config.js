@@ -14,6 +14,7 @@ module.exports = withMT({
       'secondary': '#7c3aed',
       'navbar': "#2c2486",
       "section": "#5a4dab",
+      "intro": "#28224d",
       "element": "#8a7fd2",
       "button": "#D2D2D2",
       "hover": "#BFBFBF",
