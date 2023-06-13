@@ -65,10 +65,12 @@ const [projects, setProjects] = useState([]);
     const handleCardClick = (card) => {
         setSelectedCard(card);
         setIsModalOpen(true);
+        document.body.style.overflow = 'hidden';
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
+         document.body.style.overflow = 'unset';
     };
 
     return (
@@ -82,7 +84,7 @@ const [projects, setProjects] = useState([]);
             <Option>Material Tailwind Svelte</Option>
           </Select>
         </div>*/}
-                <div className="flex flex-row flex-wrap  justify-stretch items-center ">
+                <div className=" w-full flex flex-row flex-wrap  justify-center items-center   ">
                     {projects.map((data) => (<CardContainer
                             description={data.description}
                             title={data.title}
@@ -91,18 +93,21 @@ const [projects, setProjects] = useState([]);
                             onClick={() => handleCardClick(data)
                             }
                         />))}
+
                 </div>
                 <div>
-            <Modal
+
+</div>
+                    <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
                 contentLabel="Card Modal"
-                className="max-w-lg mx-auto my-4 rounded-lg text-accent bg-indigo-800 "
-                overlayClassName=" fixed inset-0 flex justify-center items-center  "
+                className="py-14 rounded-lg text-accent bg-primary-dark
+                 h-3/4 w-3/4 z-50"
+                overlayClassName="bg-intro/[0.8] z-50 fixed inset-0 flex justify-center items-center  "
             >
                 {selectedCard && (<CardModal selectedCard={selectedCard}/>)}
             </Modal>
-</div>
         </div>
     );
 }

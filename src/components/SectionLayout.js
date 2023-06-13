@@ -4,7 +4,7 @@ export default function SectionLayout(props) {
             <div className ={"w-full"}>
                  <h1 className={" py-6  text-center text-accent text-5xl "}>{props.title} </h1>
             </div>
-            <div className={"py-10 w-full flex items-center justify-center "}>
+            <div className={"py-2 w-full flex items-center justify-center "}>
                 {props.content}
             </div>
         </div>)

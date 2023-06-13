@@ -1,15 +1,5 @@
 [
   {
-    "id": "ADHD",
-    "title": "ADHD",
-    "description": "This is the description of Project 1.",
-    "skills": [
-      "React",
-      "JavaScript",
-      "CSS"
-    ]
-  },
-  {
     "id": "Propaganda",
     "title": "Propaganda Classification",
     "description": "In this project I evaluated a Random Forest  and RoBERTa model when classifying propaganda and different propaganda techniques",
@@ -17,38 +7,43 @@
       "Text Classification",
       "NLP",
       "Python",
-      "Altair"]
+      "Altair"
+    ],
+
+    "link": "None"
   },
   {
     "id": "ADHD",
-    "title": "An exploration of discussions and sentiments of ADHD communities on social media using reddit",
-    "description": "This project was my masters dissertation, I evaluated how people with ADHD communicate online and how this differs from other communities. A further evaluation was done in comparison to covid-19",
+    "title": "Exploring ADHD communities using Reddit",
+    "description": "This project was my masters dissertation, I evaluated how people with ADHD communicate online and how this differs from other communities. ",
     "skills": [
       "Sentiment Analysis",
       "Topic Modelling",
       "Data Visualization",
       "NLP",
       "Python"
-    ]
+    ],
+    "link": "https://github.com/PaulaDCV/ADHD_Reddit"
   },
   {
-    "id": "ADHD",
+    "id": "IMDB",
     "title": "IMDB analysis ",
     "description": " I analyzed the dataset to gain insights into movie trends and popularity over time",
     "skills": [
       "Data Visualisation",
-      "",
       "Python"
-    ]
+    ],
+    "link": " IMDB"
   },
   {
-    "id": "ADHD",
-    "title": "GameOfCraps",
+    "id": "GameOfCraps",
+    "title": "Game Of Craps",
     "description": " Simulating a running a game of craps and evaluating the  results after some games.",
     "skills": [
       "Statistics",
       "C++"
-    ]
+    ],
+    "link": "https://github.com/PaulaDCV/Game-of-craps"
   },
   {
     "id": "ADHD",

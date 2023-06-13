@@ -17,7 +17,7 @@ export default function NavBar() {
         console.log("heeey"+ to);
     }
     return (
-        <Disclosure as="nav" className="sticky z-50 top-0  bg-navbar">
+        <Disclosure as="nav" className="sticky z-40 top-0  bg-navbar">
             {({open}) => (
                 <>
                     <div className=" mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

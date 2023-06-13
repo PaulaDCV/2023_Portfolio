@@ -25,7 +25,7 @@ function App() {
         <div className=" App flex flex-col justify-between   ">
 
 
-            {sections.map((section) => (<div className="bg-section">
+            {sections.map((section) => (<div className=" z-49 bg-section">
                     <Element id={section.id}>
                         <SectionLayout title={section.title} content={section.content} bg={ section.bg}> </SectionLayout>
                     </Element>
