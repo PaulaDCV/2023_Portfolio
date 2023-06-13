@@ -1,3 +1,4 @@
+
 export default function Intro() {
     return (<div className="w-full text-accent sticky py-16 -z-50 flex-col top-16 flex items-center justify-center bg-intro" >
         <h1 className="  text-5xl font-bold self-start p-3 mx-16 mt-14 bg-element/[.2] rounded-lg "> Paula Del Castillo Vivero</h1>

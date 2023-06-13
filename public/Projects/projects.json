@@ -2,20 +2,19 @@
   {
     "id": "Propaganda",
     "title": "Propaganda Classification",
-    "description": "In this project I evaluated a Random Forest  and RoBERTa model when classifying propaganda and different propaganda techniques",
+    "description": "In this project I evaluated  Random Forest classifiers and RoBERTa models used to detect propaganda and different propaganda techniques.",
     "skills": [
       "Text Classification",
       "NLP",
       "Python",
       "Altair"
     ],
-
     "link": "None"
   },
   {
     "id": "ADHD",
     "title": "Exploring ADHD communities using Reddit",
-    "description": "This project was my masters dissertation, I evaluated how people with ADHD communicate online and how this differs from other communities. ",
+    "description": "This project was developed for my Data Science MSc dissertation, I evaluated the topics discussed and sentiments of ADHD online communities and how this differs from non-ADHD communities. ",
     "skills": [
       "Sentiment Analysis",
       "Topic Modelling",
@@ -31,22 +30,14 @@
     "description": " I analyzed the dataset to gain insights into movie trends and popularity over time",
     "skills": [
       "Data Visualisation",
+      "Data Analysis",
       "Python"
     ],
-    "link": " IMDB"
+    "link": " None"
   },
+
   {
-    "id": "GameOfCraps",
-    "title": "Game Of Craps",
-    "description": " Simulating a running a game of craps and evaluating the  results after some games.",
-    "skills": [
-      "Statistics",
-      "C++"
-    ],
-    "link": "https://github.com/PaulaDCV/Game-of-craps"
-  },
-  {
-    "id": "ADHD",
+    "id": "WellbeingWebApp",
     "title": "Web application to track wellbeing",
     "description": "This project was part of my undergraduate dissertation where I designed and developed and app to keep logs of different health and daily variables and find basic relationships between them",
     "skills": [
@@ -54,6 +45,7 @@
       "Python",
       "Django",
       "React"
-    ]
+    ],
+    "link": "https://github.com/PaulaDCV/TrackingWebApp"
   }
 ]

@@ -4,7 +4,19 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme:{
-    extend:{},
+    extend: {
+        typography: {
+            DEFAULT: {
+                css: {
+                    headings: {
+                        color: "#FFF"
+                    },
+
+                },
+            },
+        },
+    },
+
     colors: {
       'primary': '#312e81',
       'primary-dark': '#1e1b4b',
@@ -19,9 +31,14 @@ module.exports = withMT({
       "button": "#D2D2D2",
       "hover": "#BFBFBF",
     },
+
   },
-  plugins: [ require('@tailwindcss/aspect-ratio'),],
-});
+  plugins: [ require('@tailwindcss/aspect-ratio'),
+
+    require('@tailwindcss/typography'),
+
+  ],
+})
 
 
 

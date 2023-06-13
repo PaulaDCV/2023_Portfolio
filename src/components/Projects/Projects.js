@@ -5,6 +5,7 @@ import {useEffect, useState} from "react";
 import CardModal from "./CardModal";
 import axios from 'axios';
 import { Remarkable } from 'remarkable';
+import ReactMarkdown from 'react-markdown';
 
 //ToDo: Fix buttons
 //ToDo: Add searchbar
@@ -27,7 +28,7 @@ const [projects, setProjects] = useState([]);
             const markdownContent = markdownFileResponse.data;
 
             // Parse the Markdown content
-            const md = new Remarkable();
+            const md = new Remarkable({true: false});
             const parsedContent = md.render(markdownContent);
 
             // Create a complete project object with parsed Markdown content
@@ -92,22 +93,24 @@ const [projects, setProjects] = useState([]);
                             imageRef={`/images/${data.id}.png`}
                             onClick={() => handleCardClick(data)
                             }
-                        />))}
+                        />
+                   ))}
 
                 </div>
+                 <a className="prose text-accent underline hover:text-lg hover:text-gray-500" href="https://github.com/PaulaDCV"> More Projects</a>
                 <div>
 
 </div>
-                    <Modal
+                <Modal
                 isOpen={isModalOpen}
                 onRequestClose={closeModal}
                 contentLabel="Card Modal"
-                className="py-14 rounded-lg text-accent bg-primary-dark
+                className="overflow-scroll py-14 rounded-lg text-accent bg-primary-dark
                  h-3/4 w-3/4 z-50"
                 overlayClassName="bg-intro/[0.8] z-50 fixed inset-0 flex justify-center items-center  "
-            >
-                {selectedCard && (<CardModal selectedCard={selectedCard}/>)}
-            </Modal>
+                >
+                    {selectedCard && (<CardModal selectedCard={selectedCard}/>)}
+                </Modal>
         </div>
     );
 }
