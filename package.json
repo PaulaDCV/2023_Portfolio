@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://PaulaDCV.github.io/Portfolio",
+  "homepage": "https://PaulaDCV.github.io/Portfolio/index.html",
   "private": true,
   "dependencies": {
     "-": "^0.0.1",
