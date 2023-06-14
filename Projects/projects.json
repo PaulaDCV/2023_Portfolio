@@ -1,0 +1,51 @@
+[
+  {
+    "id": "Propaganda",
+    "title": "Propaganda Classification",
+    "description": "In this project I evaluated  Random Forest classifiers and RoBERTa models used to detect propaganda and different propaganda techniques.",
+    "skills": [
+      "Text Classification",
+      "NLP",
+      "Python",
+      "Altair"
+    ],
+    "link": "None"
+  },
+  {
+    "id": "ADHD",
+    "title": "Exploring ADHD communities using Reddit",
+    "description": "This project was developed for my Data Science MSc dissertation, I evaluated the topics discussed and sentiments of ADHD online communities and how this differs from non-ADHD communities. ",
+    "skills": [
+      "Sentiment Analysis",
+      "Topic Modelling",
+      "Data Visualization",
+      "NLP",
+      "Python"
+    ],
+    "link": "https://github.com/PaulaDCV/ADHD_Reddit"
+  },
+  {
+    "id": "IMDB",
+    "title": "IMDB analysis ",
+    "description": " I analyzed the dataset to gain insights into movie trends and popularity over time",
+    "skills": [
+      "Data Visualisation",
+      "Data Analysis",
+      "Python"
+    ],
+    "link": " None"
+  },
+
+  {
+    "id": "WellbeingWebApp",
+    "title": "Web application to track wellbeing",
+    "description": "This project was part of my undergraduate dissertation where I designed and developed and app to keep logs of different health and daily variables and find basic relationships between them",
+    "skills": [
+      "Web Development",
+      "Python",
+      "Django",
+      "React"
+    ],
+    "link": "https://github.com/PaulaDCV/TrackingWebApp"
+  }
+]
