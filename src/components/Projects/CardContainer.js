@@ -30,10 +30,10 @@ export default function CardContainer(props) {
                     {props.description}
                 </p>
                 <div className={"flex justify-around text-accent "}>
-                    <button className="text-accent text-lg hover:scale-125   " onClick={props.onClick}>
+                {/*    <button className="text-accent text-lg hover:scale-125   " onClick={props.onClick}>
                         Read more...
-                    </button>
-                    <a href={"https://github.com/PaulaDCV/2023_Portfolio"}>
+                    </button>*/}
+                      <a href={"https://github.com/PaulaDCV/2023_Portfolio"}>
                         <AiFillGithub className="text-accent text-lg hover:scale-125  "/>
                     </a>
                 </div>
