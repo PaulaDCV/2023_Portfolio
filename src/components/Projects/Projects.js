@@ -24,7 +24,7 @@ const [projects, setProjects] = useState([]);
         const processedProjects = await Promise.all(
           projectDataArray.map(async (project) => {
             // Fetch the corresponding Markdown file for each project
-            const markdownFileResponse = await axios.get(`/Projects/${project.id}.md`);
+            const markdownFileResponse = await axios.get(process.env.PUBLIC_URL + `/Projects/${project.id}.md`);
             const markdownContent = markdownFileResponse.data;
 
             // Parse the Markdown content
@@ -90,7 +90,7 @@ const [projects, setProjects] = useState([]);
                             description={data.description}
                             title={data.title}
                             skills={data.skills}
-                            imageRef={`/images/${data.id}.png`}
+                            imageRef={process.env.PUBLIC_URL+`/images/${data.id}.png`}
                             onClick={() => handleCardClick(data)
                             }
                         />
