@@ -37,7 +37,7 @@
   },
 
   {
-    "id": "WellbeingApp",
+    "id": "WellbeingWebApp",
     "title": "Web application to track wellbeing",
     "description": "This project was part of my undergraduate dissertation where I designed and developed and app to keep logs of different health and daily variables and find basic relationships between them",
     "skills": [
