@@ -17,14 +17,14 @@ const [projects, setProjects] = useState([]);
     const fetchData = async () => {
       try {
         // Fetch the JSON file containing project data
-        const jsonFileResponse = await axios.get("/Projects/projects.json");
+        const jsonFileResponse = await axios.get(process.env.PUBLIC_URL + "/Projects/projects.json");
         const projectDataArray = jsonFileResponse.data;
 
         // Loop through each project object
         const processedProjects = await Promise.all(
           projectDataArray.map(async (project) => {
             // Fetch the corresponding Markdown file for each project
-            const markdownFileResponse = await axios.get(process.env.PUBLIC_URL + `/Projects/${project.id}.md`);
+            const markdownFileResponse = await axios.get("./Portfolio/" + `/Projects/${project.id}.md`);
             const markdownContent = markdownFileResponse.data;
 
             // Parse the Markdown content

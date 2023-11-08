@@ -17,8 +17,8 @@ export default function CardContainer(props) {
     return (
         <div className="overflow-hidden h-[15rem] w-[40rem] m-2 rounded-3xl  bg-accent-dark/[.20] flex justify-evenly relative">
 
-            <img src={props.imageRef}
-                 alt="img-blur-shadow"
+            <img src={"./Portfolio/"+props.imageRef}
+                 alt="img-bblur-shadow"
                  className="w-[15rem]  object-cover max-h-lg"/>
 
             <div className="w-[25rem] h-full pt-1  flex justify-between items-stretch flex-col
