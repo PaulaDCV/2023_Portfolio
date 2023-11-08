@@ -101,7 +101,7 @@ const [projects, setProjects] = useState([]);
                    ))}
 
                 </div>
-                 <a className="prose text-accent underline hover:text-lg hover:text-gray-500" href="https://github.com/PaulaDCV"> More Projects</a>
+                 <a className="prose text-accent underline hover:text-lg hover:text-gray-500" href="https://github.com/PaulaDCV"> More Projects!!</a>
                 <div>
 
 </div>
