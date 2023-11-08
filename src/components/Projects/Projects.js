@@ -17,14 +17,14 @@ const [projects, setProjects] = useState([]);
     const fetchData = async () => {
       try {
         // Fetch the JSON file containing project data
-        const jsonFileResponse = await axios.get(process.env.PUBLIC_URL + "/Projects/projects.json");
+        const jsonFileResponse = await axios.get("./Portfolio/Projects/projects.json");
         const projectDataArray = jsonFileResponse.data;
 
         // Loop through each project object
         const processedProjects = await Promise.all(
           projectDataArray.map(async (project) => {
             // Fetch the corresponding Markdown file for each project
-            const markdownFileResponse = await axios.get("./Portfolio/" + `/Projects/${project.id}.md`);
+            const markdownFileResponse = await axios.get("./Portfolio/Projects/${project.id}.md");
             const markdownContent = markdownFileResponse.data;
 
             // Parse the Markdown content
@@ -51,7 +51,7 @@ const [projects, setProjects] = useState([]);
 
         setProjects(processedProjects);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching data:', error,"./Portfolio/Projects/${project.id}.md" );
       }
     };
 
@@ -86,6 +86,14 @@ const [projects, setProjects] = useState([]);
           </Select>
         </div>*/}
                 <div className=" w-full flex flex-row flex-wrap  justify-center items-center   ">
+                    <CardContainer
+                            description={"public/images/IMDB.png"}
+                            title={"title"}
+                            skills={"skills"}
+                            imageRef={"public/images/IMDB.png"}
+                            onClick={() => handleCardClick()
+                            }
+                        />
                     {projects.map((data) => (<CardContainer
                             description={data.description}
                             title={data.title}
