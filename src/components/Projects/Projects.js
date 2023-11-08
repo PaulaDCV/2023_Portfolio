@@ -88,7 +88,7 @@ const [projects, setProjects] = useState([]);
                 <div className=" w-full flex flex-row flex-wrap  justify-center items-center   ">
                     <img src={"Portfolio/images/IMDB.png"}/>
 
-
+<p>HEY</p>
 
                     {projects.map((data) => (<CardContainer
                             description={data.description}
