@@ -86,14 +86,10 @@ const [projects, setProjects] = useState([]);
           </Select>
         </div>*/}
                 <div className=" w-full flex flex-row flex-wrap  justify-center items-center   ">
-                    <CardContainer
-                            description={"public/images/IMDB.png"}
-                            title={"title"}
-                            skills={"skills"}
-                            imageRef={"public/images/IMDB.png"}
-                            onClick={() => handleCardClick()
-                            }
-                        />
+                    <img src={"Portfolio/images/IMDB.png"}/>
+
+
+
                     {projects.map((data) => (<CardContainer
                             description={data.description}
                             title={data.title}
