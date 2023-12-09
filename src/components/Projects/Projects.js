@@ -31,7 +31,7 @@ const [projects, setProjects] = useState([]);
             // Parse the Markdown content
             const md = new Remarkable({true: false});
             const parsedContent = md.render(markdownContent);
-
+            console.log(project.id)
             // Create a complete project object with parsed Markdown content
             const completeProject = {
                   id: project.id,
