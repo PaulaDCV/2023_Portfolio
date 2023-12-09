@@ -41,7 +41,7 @@ const [projects, setProjects] = useState([]);
                   // Include other project properties from the JSON file
                   images: project.images,
                   skills: project.skills,
-                  // Include any other relevant properties
+                link: project.link,// Include any other relevant properties
             };
 
             return completeProject;
@@ -95,6 +95,7 @@ const [projects, setProjects] = useState([]);
                             description={data.description}
                             title={data.title}
                             skills={data.skills}
+                            url = {data.link}
                             imageRef={`./images/${data.id}.png`}
                             onClick={() => handleCardClick(data)
                             }

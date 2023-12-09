@@ -33,7 +33,7 @@ export default function CardContainer(props) {
                 {/*    <button className="text-accent text-lg hover:scale-125   " onClick={props.onClick}>
                         Read more...
                     </button>*/}
-                      <a href={"https://github.com/PaulaDCV/2023_Portfolio"}>
+                      <a href={props.url}>
                         <AiFillGithub className="text-accent text-lg hover:scale-125  "/>
                     </a>
                 </div>
