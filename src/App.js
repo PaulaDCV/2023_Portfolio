@@ -42,9 +42,11 @@ function App() {
         {isNavbarVisible ? <NavBar classname={navbarClass}/> : <div></div>}
         <Intro/>
 
-        <div className=" App flex flex-col justify-between  ">
+        <div className=" App flex flex-col justify-between bg-section ">
 
-
+ <hr
+                    className="my-6 h-px border-t-0 bg-gradient-to-r from-transparent via-accent
+                    to-transparent opacity-50 dark:opacity-100"/>
             {sections.map((section) => (<div className=" z-49 bg-section">
                 <Element id={section.id}>
                     <SectionLayout title={section.title} content={section.content} bg={section.bg}> </SectionLayout>

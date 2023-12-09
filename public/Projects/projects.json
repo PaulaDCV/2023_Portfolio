@@ -11,6 +11,19 @@
     ],
     "link": "None"
   },
+
+  {
+    "id": "JobVacancyScraping",
+    "title": "Scraping Job Vacancies from Indeed",
+    "description": "Scraping Job Vacancies from Indeed to collect different job postings and generate a CSV file containing all of them",
+    "skills": [
+      "Web Scraping",
+      "Pandas",
+      "Python"
+    ],
+    "link": "https://github.com/PaulaDCV/ScrapingJobVacancies/tree/main"
+  },
+
   {
     "id": "ADHD",
     "title": "Exploring ADHD communities using Reddit",

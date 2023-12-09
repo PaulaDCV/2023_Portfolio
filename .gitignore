@@ -1,3 +1,5 @@
 node_modules
 *.ts
 *.ts
+/node_modules/
+/build/

@@ -17,14 +17,15 @@ const [projects, setProjects] = useState([]);
     const fetchData = async () => {
       try {
         // Fetch the JSON file containing project data
-        const jsonFileResponse = await axios.get("./Portfolio/Projects/projects.json");
+        const jsonFileResponse = await axios.get("./Projects/projects.json");
         const projectDataArray = jsonFileResponse.data;
 
         // Loop through each project object
         const processedProjects = await Promise.all(
           projectDataArray.map(async (project) => {
+
             // Fetch the corresponding Markdown file for each project
-            const markdownFileResponse = await axios.get("./Portfolio/Projects/${project.id}.md");
+            const markdownFileResponse = await axios.get(`./Projects/${project.id}.md`);
             const markdownContent = markdownFileResponse.data;
 
             // Parse the Markdown content
@@ -86,22 +87,24 @@ const [projects, setProjects] = useState([]);
           </Select>
         </div>*/}
                 <div className=" w-full flex flex-row flex-wrap  justify-center items-center   ">
-                    <img src={"Portfolio/images/IMDB.png"}/>
 
-<p>HEY</p>
+
+
 
                     {projects.map((data) => (<CardContainer
                             description={data.description}
                             title={data.title}
                             skills={data.skills}
-                            imageRef={process.env.PUBLIC_URL+`/images/${data.id}.png`}
+                            imageRef={`./images/${data.id}.png`}
                             onClick={() => handleCardClick(data)
                             }
                         />
                    ))}
 
                 </div>
-                 <a className="prose text-accent underline hover:text-lg hover:text-gray-500" href="https://github.com/PaulaDCV"> More Projects!!</a>
+                 <a className="prose text-accent underline hover:text-lg hover:text-gray-500" href="https://github.com/PaulaDCV">
+                     More Projects
+                 </a>
                 <div>
 
 </div>
